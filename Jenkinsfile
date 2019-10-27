@@ -11,7 +11,7 @@ agent any
                  sh 'make checck'
                  }
               }
-         stage ('eploy') {
+         stage ('deploy') {
              steps {
                   sh 'make publish'
               }
