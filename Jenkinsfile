@@ -1,7 +1,7 @@
 pipeline {
 agent any
     stages {
-        stage(Build')
+        stage('Build')
             steps {
                sh 'make'
                }
@@ -11,7 +11,7 @@ agent any
                  sh 'make checck'
                  }
               }
-         stage ('deploy') {
+         stage ('Deploy') {
              steps {
                   sh 'make publish'
               }
