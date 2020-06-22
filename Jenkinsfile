@@ -16,6 +16,8 @@ pipeline {
          stage ('Deploy') {
              steps {
                   sh 'make publish'
+
+         stage ('test') {
               }
          }
      }            
